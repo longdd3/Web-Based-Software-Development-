@@ -1,0 +1,34 @@
+<html> 
+<head>
+    <meta charset = "utf-8">
+    <title> Change BackGround page</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <script>
+        function changeColor(colorName) {
+        document.body.style.background = colorName;
+      }
+	function changefont1()
+	{
+	 document.getElementById("alltext").style.fontFamily = "sans-serif";
+	}
+	
+       function changefont2()
+	{
+	 document.getElementById("alltext").style.fontFamily = "serif";
+	}
+     </script>
+</head>
+<body>
+<div id ="alltext">
+<p> Some Simple Text.</p>
+<p> Option: </p>
+<p type= "submit" onclick="changeColor('gray')"id="a" > Gray BackGround </p>
+<p type= "submit" onclick="changeColor('white')" id="a"> White BackGround </p> 
+<p type= "submit" onclick="changefont1()" id="a" >Sans-serif Text </p>
+<p type= "submit" onclick="changefont2()" id="a" >Serif Text </p>
+</div>
+    
+    
+</body>
+</html>
+
