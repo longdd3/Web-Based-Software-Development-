@@ -1,0 +1,57 @@
+<html>
+  <head>
+  <meta charset = "utf-8">
+ <title>Calculating Sphere Volume</title>
+<script>
+	function start()
+	{	
+		
+		var button1 = document.getElementById( "fromFtoC" );
+		var button2 = document.getElementById( "fromCtoF" );
+		button1.addEventListener( "click", displayValueFtoC, false );
+		button2.addEventListener( "click", displayValueCtoF, false );
+	}
+	
+	
+	function displayValueFtoC()
+	{
+		var inputField = document.getElementById( "ValueInput" );
+	 	var fahrenheit = parseFloat( inputField.value );
+	 	var result = document.getElementById( "result" );
+	 	result.innerHTML = fahrenheit + " convert to Celsius is " + celsius(fahrenheit);
+	}
+	function displayValueCtoF()
+	{
+		var inputField = document.getElementById( "ValueInput" );
+	 	var celsius = parseFloat( inputField.value );
+	 	var result = document.getElementById( "result" );
+	 	result.innerHTML = celsius+ "convert to Fahrenheit is " + Fahrenheit(celsius);
+	}
+
+
+
+	
+	function celsius(fahrenheit)
+	{	
+		return 5.0 / 9.0 * ( fahrenheit - 32 );
+	}
+	
+	function Fahrenheit(celsius)
+	{
+		return (9.0 / 5.0 * celsius) + 32;
+	}
+	window.addEventListener( "load", start, false );
+	
+</script>
+</head>
+<body>
+	<form action = "#">
+	<p><label> Enter the Value you want to transfer : 
+		<input id = "ValueInput" type = "number" ></label>
+		<input id = "fromFtoC" type = "button" value = "Convert to  Celsius">
+		<input id = "fromCtoF" type = "button" value = "Convert to  Fahrenheit"></p>
+	</form>
+	<p id = "result"></p>
+	
+</body>
+</html>
