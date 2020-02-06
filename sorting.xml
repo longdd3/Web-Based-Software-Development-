@@ -1,0 +1,30 @@
+<?xml version = "1.0"?>
+ <?xml-stylesheet type = "text/xsl" href = "sorting_byPage.xsl"?>
+
+<!-- Fig. 15.20: sorting.xml -->
+ <!-- XML document containing book information -->
+ <book isbn = "999-99999-9-X">
+ <title>Deitel&apos;s XML Primer</title>
+
+<author>
+ <firstName>Jane</firstName>
+ <lastName>Blue</lastName>
+ </author>
+
+ <chapters>
+ <frontMatter>
+ <preface pages = "2" />
+ <contents pages = "5" />
+ <illustrations pages = "4" />
+ </frontMatter>
+ <pix>
+ <chapter name ="Chapter " number = "3" pages = "44">Advanced XML</chapter>
+ <chapter  name ="Chapter " number = "2" pages = "35">Intermediate XML</chapter>
+ <appendix  name ="Appendix " number = "B" pages = "76">Parsers and Tools</appendix>
+ <appendix  name ="Appendix " number = "A" pages = "7">Entities</appendix>
+ <chapter name ="Chapter " number = "1" pages = "58">XML Fundamentals</chapter>
+ </pix>
+ </chapters>
+
+<media type = "CD" />
+ </book>
